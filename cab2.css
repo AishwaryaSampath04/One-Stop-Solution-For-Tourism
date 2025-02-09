@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#intro {
+    background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.intro-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.intro-box button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.intro-box button:hover {
+    background-color: #218838;
+}
+
+.book h2{
+    background-color: #ceac57;
+    width: 200px;
+    padding-left: 2rem;
+    line-height: 4rem;
+    border-radius: 20px;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#cabResults {
+    margin-top: 2rem;
+}

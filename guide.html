@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Guide Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: url(pic87.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            text-align: center;
+    
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.5rem;
+        }
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 1rem;
+        }
+        .card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .card button:hover {
+            background-color: #575757;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World with Us</h1>
+        <p>Book your perfect guide and embark on an unforgettable journey!</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="card">
+                <img src="pic81.jpg" alt="Tour Guide">
+                <h3>Personalized Tour Guides</h3>
+                <p>Explore destinations with experienced and friendly guides tailored to your preferences.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="pic82.jpg" alt="Adventure">
+                <h3>Adventure Packages</h3>
+                <p>Enjoy thrilling adventures including hiking, rafting, and more!</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="pic80.avif" alt="Relaxation">
+                <h3>Relaxation Retreats</h3>
+                <p>Unwind at serene beaches and resorts designed for relaxation.</p>
+                <button>Book Now</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tourism Guide Booking. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Thank you for your interest! Booking details will be shared soon.');
+            });
+        });
+    </script>
+</body>
+</html>

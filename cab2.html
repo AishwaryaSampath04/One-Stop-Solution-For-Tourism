@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Booking</title>
+    <link rel="stylesheet" href="cab2.css">
+</head>
+<body>
+    <header>
+        <h1>QuickRide - Cab Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bookCab">Book a Cab</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="intro-box">
+            <h2>Ride at Your Convenience</h2>
+            <p>Book cabs instantly for your daily travel needs. Affordable, reliable, and quick!</p>
+            <button onclick="scrollToBooking()">Book Now</button>
+        </div>
+    </section>
+
+    <section id="bookCab">
+        <div class="book">
+        <marquee width="60%" id="GFG">
+            <h2>Book Your Cab</h2>
+        </marquee>
+    </div>
+        <form id="cabBookingForm">
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+
+            <label for="drop">Drop-off Location:</label>
+            <input type="text" id="drop" name="drop" placeholder="Enter drop-off location" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="cabType">Cab Type:</label>
+            <select id="cabType" name="cabType" required>
+                <option value="Economy">Economy</option>
+                <option value="Luxury">Luxury</option>
+                <option value="SUV">SUV</option>
+            </select>
+
+            <button type="submit">Find a Cab</button>
+        </form>
+
+        <div id="cabResults">
+            <!-- Available cabs will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 QuickRide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="cab2.js"></script>
+</body>
+</html>

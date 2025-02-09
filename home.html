@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #chatbot-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        #chatbot-popup {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            width: 350px;
+            height: 550px;
+            background-color: rgb(247, 242, 242);
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+
+        #chatbot-popup-header {
+            background-color: #4ce462;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+        }
+
+        #chatbot-popup-header button {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #chatbot-popup-content {
+            height: calc(100% - 50px);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <section class="header">
+
+        <a href="home.html" class="logo">| Dream Travel |</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Package.html">Package</a>
+            <a href="book.html">Book</a>
+            
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+<section class="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background:url('pic10.jpg');">
+
+                <div class="content">
+                    <span>Explore,Discover,Travel</span>
+                    <h3>Travel around the World</h3>
+                    <a href="Package.html" class="btn">Discover more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background:url('pic11.jpg');">
+
+                <div class="content">
+                    <span>Explore,Discover,Travel</span>
+                    <h3>Discover the new Places</h3>
+                    <a href="Package.html" class="btn">Discover more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background:url('pic12.jpg');">
+
+                <div class="content">
+                    <span>Explore,Discover,Travel</span>
+                    <h3>Make your trip Worthwile</h3>
+                    <a href="Package.html" class="btn">Discover more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+    </div>
+    
+
+
+</section>
+
+
+    <section class="services">
+
+        <h1 class="heading-title">Our services</h1>
+    
+        <div class="box-container">
+    
+            
+    
+            <div class="box">
+                <img src="pic5.jpg" alt="">
+                <h3>Tour Guide</h3>
+                <a href="guide.html" class="btn"><i class='fas fa-angle-right' style='font-size:36px'></i></a>
+            </div>
+    
+            
+    
+            <div class="box">
+                <img src="pic7.avif" alt="">
+                <h3>Hotel Booking</h3>
+                <a href="hotel1.html" class="btn"><i class='fas fa-angle-right' style='font-size:36px'></i></a>
+            </div>
+           
+    
+            <div class="box">
+                <img src="pic8.jpg" alt="">
+                <h3>Cab Booking</h3>
+                <a href="cab.html" class="btn"><i class='fas fa-angle-right' style='font-size:36px'></i></a>
+                <h3>Cab Booking</h3>
+            </div>
+    
+            <div class="box">
+                <img src="pic9.jpg" alt="">
+                <h3>Event Booking</h3>
+                <a href="event.html" class="btn"><i class='fas fa-angle-right' style='font-size:36px'></i></a>
+            </div>
+    
+    
+        </div>
+    </section>
+
+
+<section class="home-about">
+
+    <div class="image">
+        <img src="pic13.webp" alt="about">
+    </div>
+
+    <div class="content">
+        <h3>About us</h3>
+        <p>We are passionate about creating seamless, memorable travel experiences
+             for our customers. Whether you're dreaming of a relaxing beach holiday, an
+              adventurous mountain escape, or a cultural city tour, we specialize in 
+              crafting tailored travel plans that suit your preferences and needs.</p>
+              <a href="About.html" class="btn">read more</a>
+    </div>
+</section>   
+
+
+<section class="home-packages">
+
+    <h1 class="heading-title"> Our Packages </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="pic16.jpg"  alt="">
+            </div>
+            <div class="content">
+                <h3>Goa</h3>
+                <p>Embark on unforgettable adventures and explore the world like never before!</p>
+                <a href="book.html" class="btn">&#8377 18,000/person</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="pic14.jpg"  alt="">
+            </div>
+            <div class="content">
+                <h3>Hampi</h3>
+                <p>Unleash the explorer in you—every adventure begins with a single tap!</p>
+                <a href="book.html" class="btn">&#8377 8,000/person</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="pic100.jpg"  alt="">
+            </div>
+            <div class="content">
+                <h3>Andaman Island</h3>
+                <p>Turn your dream destinations into memories—travel smarter, live bolder!</p>
+                <a href="book.html" class="btn">&#8377 30,000/person</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="load-more"> <a href="Package.html" class="btn">Load more</a></div>
+
+</section>
+
+
+<section class="home-offer">
+    <div class="content">
+        <h3>Upto 50% Off</h3>
+        <p>Discover breathtaking destinations with our exclusive tourism 
+            packages! 🌍✨ Enjoy unbeatable deals, luxurious stays, and 
+            tailor-made adventures designed just for you. Don’t miss out 
+            on our limited-time offers – your dream vacation awaits!</p>
+            <a href="book.html" class="btn">Book now</a>
+            
+    </div>
+
+
+    
+        
+    
+</section>
+
+<img id="chatbot-icon" src="chatbot.jpg" alt="Chatbot Icon">
+
+    <!-- Chatbot Popup -->
+    <div id="chatbot-popup">
+        <div id="chatbot-popup-header">
+            AI Chatbot
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div id="chatbot-popup-content">
+            <iframe src="chat.html"></iframe>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<section class="footer">
+
+    
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="home.html"> <i class="fas fa-angle-right"> </i> Home</a>
+            <a href="About.html">  <i class="fas fa-angle-right"> </i> About</a>
+            <a href="Package.html">  <i class="fas fa-angle-right"> </i> Package</a>
+            <a href="book.html">  <i class="fas fa-angle-right"> </i> Book</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#"> <i class="fas fa-angle-right"> </i> Ask questions</a>
+            <a href="#">  <i class="fas fa-angle-right"> </i> About us</a>
+            <a href="#">  <i class="fas fa-angle-right"> </i> Privacy policy</a>
+            <a href="#">  <i class="fas fa-angle-right"> </i> Terms of use</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"> </i> +91 8363284691</a>
+            <a href="#">  <i class="fas fa-phone"> </i> +263-645-746</a>
+            <a href="#">  <i class="fas fa-envelope"> </i> presidency@gmail.com</a>
+            <a href="#">  <i class="fas fa-map"> </i> Banglore, India-560010</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"> </i>facebook</a>
+            <a href="#">  <i class="fab fa-twitter"> </i> twitter</a>
+            <a href="#">  <i class="fab fa-instagram"> </i> Instagram</a>
+            <a href="#">  <i class="fab fa-linkedin"> </i> Linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="credit">created by <span>Mr. Presidency designer </span> | All rights reserved! </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+<script>
+    
+    const chatbotIcon = document.getElementById('chatbot-icon');
+    const chatbotPopup = document.getElementById('chatbot-popup');
+    const closeChatbot = document.getElementById('close-chatbot');
+
+    
+    chatbotIcon.addEventListener('click', () => {
+        chatbotPopup.style.display = 'block';
+    });
+
+    
+    closeChatbot.addEventListener('click', () => {
+        chatbotPopup.style.display = 'none';
+    });
+</script>
+
+
+</body>
+</html>

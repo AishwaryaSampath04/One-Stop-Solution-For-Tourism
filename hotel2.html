@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Hotel</title>
+    <link rel="stylesheet" href="hotel2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="heading" style="background-image:url(pic64.jpg);">
+        <h1>Book Your Stay</h1>
+    </div>
+    </header>
+
+    <main class="booking-form-container">
+        <form class="booking-form">
+            <h2>Hotel Booking Form</h2>
+
+            <label for="checkin">Check-In Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="">Select a Room Type</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            
+            <a href="payment.html" class="btn">Book Now</a>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Hotel Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
